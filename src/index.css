@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 2px;
+  }
+
+  .mobile-sort,
+  .sort-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: 1px;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table thead tr {
+    /* Target the <tr> inside <thead> */
+    background-color: blue; /* Make the row blue */
+    color: white; /* Optional: Make text white for contrast */
+  }
+
+  table th {
+    background-color: blue;
+    color: white;
+  }
+  table td:last-child {
+    border-bottom: 1px;
+  }
+  .custom-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none; /* IE */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .custom-scroll::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+  }
+}
