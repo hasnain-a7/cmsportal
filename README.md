@@ -1,8 +1,19 @@
-# React + Vite
+# Student CMS Portal Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the Frontend of a **Student CMS (Content Management System) Portal**, built using **React.js** and **Tailwind CSS**. The portal provides an interactive and user-friendly interface for managing student data.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
+- **React.js** – For building the user interface.
+- **Tailwind CSS** – For styling and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## 🎨 Features
+- ✅ Student Dashboard  
+- ✅ User-friendly UI with Tailwind CSS  
+- ✅ Responsive design  
+- ✅ Interactive components  
+
+## 🛠 Installation & Setup
+1. **Clone the repository:**
+ d
+
