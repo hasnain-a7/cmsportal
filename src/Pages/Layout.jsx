@@ -12,7 +12,7 @@ const Layout = () => {
   };
 
   return (
-    <div className="relative flex flex-col h-dvh transition-all ">
+    <div className="relative flex flex-col h-dvh transition-all w-full ">
       <Header toggleSidebar={toggleSidebar} className="flex-none" />
 
       <div className="flex flex-1">
@@ -33,7 +33,7 @@ const Layout = () => {
         </main>
       </div>
 
-      <div className="w-[calc(100%-8px)] h-[65px]  flex justify-center text-[#031F31] fixed bottom-1 left-0.5 right-0.5 ">
+      <div className="w-full h-[50px]  flex justify-center text-[#031F31] ">
         <Footer className="flex-none " />
       </div>
     </div>
