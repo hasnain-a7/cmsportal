@@ -18,7 +18,7 @@ const CourseCard = () => {
       <div className="  p-3 flex  items-center text-center gap-4">
         <div className="w-auto ml-2  h-20 p-1 flex items-center justify-center">
           <img
-            className="w-full  h-full mx-auto rounded-sm border"
+            className="w-full  h-full mx-auto rounded-full border"
             src="https://hips.hearstapps.com/hmg-prod/images/cristiano-ronaldo-of-portugal-reacts-as-he-looks-on-during-news-photo-1725633476.jpg?crop=0.666xw:1.00xh;0.180xw,0&resize=640:*" // Replace with actual image URL
             alt="Instructor"
           />
