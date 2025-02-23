@@ -6,7 +6,7 @@ import { FaVideo } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 const CourseCard = () => {
   return (
-    <div className="max-w-md mx-auto bg-white shadow-lg rounded-sm overflow-hidden">
+    <div className="w-full mx-auto bg-[#FFFFFF] shadow-lg rounded-sm overflow-hidden">
       <div className="bg-[#3CBEA9] text-white p-4">
         <h2 className="text-xl font-bold">
           CS610 - Data Structure & Algorithm

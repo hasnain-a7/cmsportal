@@ -1,67 +1,84 @@
 @import "tailwindcss";
 
 @media screen and (max-width: 600px) {
-  table {
-    border: 2px;
+  .custom-table {
+    border: 2px solid #ddd;
+    width: 100%;
+    border-collapse: collapse;
   }
-
-  .mobile-sort,
-  .sort-wrapper {
-    display: flex;
-    gap: 20px;
-  }
-
-  table caption {
+  
+  .custom-table caption {
     font-size: 1.3em;
-  }
-
-  table thead {
-    border: 1px;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: 0.625em;
-  }
-
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: 0.8em;
-    text-align: right;
-  }
-
-  table td::before {
-    /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
-    content: attr(data-label);
-    float: left;
+    margin-bottom: 0.5rem;
+    text-align: left;
     font-weight: bold;
-    text-transform: uppercase;
   }
-  table thead tr {
-    /* Target the <tr> inside <thead> */
-    background-color: blue; /* Make the row blue */
-    color: white; /* Optional: Make text white for contrast */
-  }
-
-  table th {
-    background-color: blue;
+  
+  .custom-table thead {
+    background-color: #3CBEA9;
     color: white;
   }
-  table td:last-child {
-    border-bottom: 1px;
+  
+  .custom-table thead tr {
+    border: none;
   }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .custom-table tbody tr {
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-table tbody tr:hover {
+    background-color: #f1f5f9; /* Light gray on hover */
+  }
+  
+  .custom-table td {
+    font-size: 0.9rem;
+  }
+  
+  .custom-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: none; /* Hide for desktop */
+    text-transform: uppercase;
+    color: #6b7280;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-table thead {
+      display: none; /* Hide thead on small screens */
+    }
+  
+    .custom-table tr {
+      display: block;
+      margin-bottom: 0.625em;
+      border-bottom: 2px solid #ddd;
+    }
+  
+    .custom-table td {
+      display: block;
+      text-align: right;
+      border: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .custom-table td::before {
+      display: inline-block;
+      float: left;
+    }
+  
+    .custom-table td:last-child {
+      border-bottom: none;
+    }
+  }
+  
   .custom-scroll {
     overflow-x: auto;
     overflow-y: hidden;

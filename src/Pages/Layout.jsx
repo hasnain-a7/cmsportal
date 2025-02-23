@@ -25,7 +25,7 @@ const Layout = () => {
         />
 
         <main
-          className={`flex-1 p-1 bg-[#f0f2f3] transition-all duration-300 h-full ${
+          className={`flex-1 p-1 bg-[#F5F5F5] transition-all duration-300 h-full ${
             isSidebarOpen ? "lg:ml-52" : "ml-0"
           }  mx-auto`}
         >

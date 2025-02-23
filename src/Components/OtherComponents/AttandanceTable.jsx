@@ -44,9 +44,9 @@ const StudentsTable = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <table className="w-full table-auto">
+      <table className="w-full table-auto custom-table">
         <thead>
-          <tr className="bg-[#3CBEA9] text-white">
+          <tr className="bg-[#3CBEA9] border border-black text-white">
             <th className="p-2 border">Course Name</th>
             <th className="p-2 border">Delivered</th>
             <th className="p-2 border">Absent</th>
@@ -55,7 +55,7 @@ const StudentsTable = () => {
         </thead>
         <tbody>
           {transformedStudents.map((student, index) => (
-            <tr key={index} className="bg-[#eaf1f1] text-[#031F31]">
+            <tr key={index} className="bg-[#FFFFFF] text-[#031F31]">
               <td className="p-2 border" data-label="Course Name">
                 {student.courseName}
               </td>

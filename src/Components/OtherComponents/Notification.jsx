@@ -34,14 +34,14 @@ const notifications = [
 
 export default function Notification() {
   return (
-    <div className="w-full h-[73vh] bg-[#eaf1f1] rounded-sm drop-shadow-lg sm:p-2 mx-auto">
+    <div className="w-full h-auto bg-[#FFFFFF] rounded-sm drop-shadow-lg sm:p-2 mx-auto">
       {/* Header */}
       <div className="bg-[#3CBEA9] text-white font-bold p-2 mb-2">
         <h2>Notifications Alerts</h2>
       </div>
 
       {/* Notifications List */}
-      <div className="relative flex flex-col rounded-lg shadow-sm border border-slate-200 h-[62vh] overflow-y-auto p-2">
+      <div className="relative flex flex-col rounded-lg shadow-sm border border-slate-200 h-auto overflow-y-auto p-2">
         {notifications.map((item, index) => (
           <div
             key={index}
