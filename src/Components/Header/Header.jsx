@@ -11,7 +11,7 @@ function Header(props) {
       >
         <div className="font-bold">
           <TfiAlignJustify
-            size={32}
+            size={30}
             className={`transition-transform duration-300 ease-in-out ${
               props.isSidebarOpen ? "rotate-90" : ""
             }`}
@@ -19,10 +19,10 @@ function Header(props) {
         </div>
       </button>
       <div className="h-full items-center flex justify-center text size-14  p-1">
-        <img src="/public/logo2.png" alt="University logo" />
+        <img src="/logo2.png" alt="University logo" />
       </div>
       <div className="h-full w-auto items-center flex justify-center p-4">
-        <IoIosSettings size={32} />
+        <IoIosSettings size={30} />
       </div>
     </header>
   );
