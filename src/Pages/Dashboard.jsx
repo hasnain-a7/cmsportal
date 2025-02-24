@@ -2,7 +2,7 @@ import StudentProfileCard from "../Components/OtherComponents/StudentProfileCard
 import Notification from "../Components/OtherComponents/Notification";
 import { FiAlertCircle } from "react-icons/fi";
 import TodaytimeTable from "../Components/OtherComponents/TodaytimeTable";
-import ShortAttandance from "../Components/OtherComponents/shortAttandance";
+import ShortAttandance from "../Components/OtherComponents/ShortAttandance";
 import CurrentCgpa from "../Components/OtherComponents/CurrentCgpa";
 
 const Dashboard = () => {
