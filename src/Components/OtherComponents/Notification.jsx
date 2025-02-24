@@ -34,7 +34,7 @@ const notifications = [
 
 export default function Notification() {
   return (
-    <div className="w-full h-auto bg-[#FFFFFF] rounded-sm drop-shadow-lg sm:p-2 mx-auto">
+    <div className="w-full h-full bg-[#FFFFFF] border-[#3CBEA9] border-t-4 rounded-sm  p-3 sm:p-2 mx-auto relative">
       {/* Header */}
       <div className="bg-[#3CBEA9] text-white font-bold p-2 mb-2">
         <h2>Notifications Alerts</h2>

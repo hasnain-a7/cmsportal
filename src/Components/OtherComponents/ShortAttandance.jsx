@@ -9,7 +9,7 @@ const ShortAttandance = () => {
     (course) => course.percentage < 75
   );
   return (
-    <div className="w-full h-auto bg-[#FFFFFF] rounded-sm drop-shadow-sm p-2 mx-auto relative">
+    <div className="w-full h-auto bg-[#FFFFFF] rounded-sm p-2 mx-auto relative">
       <h2 className="text-xl font-bold text-red-600">Attendance Warning</h2>
       <p className="text-sm text-gray-700 mt-1">
         The following courses have attendance below 75%:

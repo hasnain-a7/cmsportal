@@ -1,6 +1,6 @@
 const StudentProfileCard = () => {
   return (
-    <div className="w-full h-auto bg-[#FFFFFF] border-[#3CBEA9] border-t-4 rounded-sm drop-shadow-lg p-3 sm:p-2 mx-auto relative">
+    <div className="w-full h-auto bg-[#FFFFFF] border-[#3CBEA9] border-t-4 rounded-sm  p-3 sm:p-2 mx-auto relative">
       {/* Active Status Label */}
       <span className="absolute top-3 right-3 text-xs font-semibold text-[#3CBEA9] bg-green-100 px-3 py-1 rounded-full">
         Active

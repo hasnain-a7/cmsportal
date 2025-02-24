@@ -1,6 +1,6 @@
 const CurrentCgpa = () => {
   return (
-    <div className="w-full  bg-white rounded-sm shadow-sm mx-auto p-2 ">
+    <div className="w-full  bg-white rounded-sm  mx-auto p-2 ">
       <div className="flex justify-between items-center  bg-white p-2">
         <div>
           <h2 className="text-xl font-bold text-gray-800">CGPA</h2>

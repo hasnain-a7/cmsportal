@@ -16,14 +16,14 @@ const Dashboard = () => {
         <FiAlertCircle className="mr-3" size={30} />
         <p className="text-sm md:text-base">
           Your tuition fee payment is due! Please make the payment to avoid
-          penalties...
+          penalties.
         </p>
       </div>
 
       {/* Profile and Notification Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
         {/* Student Profile */}
-        <div className=" w-full flex items-center justify-center  h-auto bg-white rounded-sm shadow-md">
+        <div className=" w-full flex items-center justify-center  h-auto bg-white rounded-sm shadow-sm">
           <StudentProfileCard />
         </div>
 
@@ -34,17 +34,17 @@ const Dashboard = () => {
         </div>
 
         {/* Notifications */}
-        <div className="flex items-center justify-center  h-auto bg-white rounded-sm shadow-md">
+        <div className="w-full flex items-center justify-center  h-auto bg-white rounded-sm shadow-sm">
           <Notification />
         </div>
 
         {/* Today's Timetable */}
-        <div className="flex items-center justify-center  h-auto col-span-1 md:col-span-2 lg:col-span-1 bg-white rounded-sm shadow-md">
+        <div className="flex items-center justify-center  h-auto col-span-1 md:col-span-2 lg:col-span-1 bg-white rounded-sm shadow-sm">
           <TodaytimeTable />
         </div>
 
         {/* Additional Section */}
-        <div className="bg-blue-700 flex items-center justify-center  h-auto col-span-1 md:col-span-2 lg:col-span-1 rounded-sm shadow-md">
+        <div className="bg-blue-700 flex items-center justify-center  h-auto col-span-1 md:col-span-2 lg:col-span-1 rounded-sm shadow-sm">
           {/* Content Here */}
           <p className="text-white">Additional Content</p>
         </div>
