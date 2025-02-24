@@ -101,8 +101,10 @@ const TodaytimeTable = () => {
       },
     ],
   };
-  const today = "Friday";
-  const todaySchedule = timetable[today] || [];
+  const now = new Date();
+  const today = now.toLocaleDateString("en-US", { weekday: "long" });
+
+  const todaySchedule = timetable[today];
   return (
     <div className="w-full  h-auto bg-[#FFFFFF] border-[#3CBEA9] border-t-4 rounded-sm drop-shadow-lg p-2 mx-auto relative">
       <h2 className="text-xl font-bold mb-2 text-[#031F31]">
