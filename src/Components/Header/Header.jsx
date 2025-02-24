@@ -19,7 +19,7 @@ function Header(props) {
         </div>
       </button>
       <div className="h-full items-center flex justify-center text size-14  p-1">
-        <img src="/src/Assets/logo2.png" alt="University logo" />
+        <img src="/public/logo2.png" alt="University logo" />
       </div>
       <div className="h-full w-auto items-center flex justify-center p-4">
         <IoIosSettings size={32} />
