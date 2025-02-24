@@ -16,7 +16,7 @@ const Dashboard = () => {
         <FiAlertCircle className="mr-3" size={30} />
         <p className="text-sm md:text-base">
           Your tuition fee payment is due! Please make the payment to avoid
-          penalties.
+          penalties...
         </p>
       </div>
 
