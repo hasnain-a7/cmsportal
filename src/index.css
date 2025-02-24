@@ -63,8 +63,8 @@
     }
 
     .custom-table td {
-      display: block;
-      text-align: right;
+      display: flex;
+      justify-content: space-between;
       border: none;
       border-bottom: 1px solid #ddd;
     }
@@ -81,11 +81,5 @@
   .custom-scroll {
     overflow-x: auto;
     overflow-y: hidden;
-    -ms-overflow-style: none; /* IE */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .custom-scroll::-webkit-scrollbar {
-    display: none; /* Chrome/Safari/Opera */
   }
 }

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"; // To render nested routes
 import { useState } from "react";
 import Header from "../Components/Header/Header"; // Header component
-import Sidebar from "../Components/Sidebar";
+import Sidebar from "../Components/OtherComponents/Sidebar";
 import Footer from "../Components/Footer/Footer"; // Footer component
 
 const Layout = () => {
