@@ -125,7 +125,7 @@ const TodaytimeTable = () => {
           </tr>
         </thead>
         <tbody>
-          {todaySchedule.length > 0 ? (
+          {(todaySchedule?.length ?? 0) > 0 ? (
             todaySchedule.map((session, index) => (
               <tr key={index}>
                 <td className="border text-[#031F31] border-[#031F31] p-2">
