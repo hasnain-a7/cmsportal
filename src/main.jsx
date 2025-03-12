@@ -26,10 +26,8 @@ import LoginPage from "./Pages/LoginPage.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      {/* Login Route - Should not wrap other routes */}
       <Route path="/login" element={<LoginPage />} />
 
-      {/* Protected Routes */}
       <Route path="/" element={<ProtectedLayout />}>
         <Route element={<Layout />}>
           <Route index element={<Dashboard />} />

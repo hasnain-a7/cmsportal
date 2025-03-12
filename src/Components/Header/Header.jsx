@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { TfiAlignJustify } from "react-icons/tfi";
-import { IoIosSettings } from "react-icons/io";
+
+import ProfileDropdown from "../OtherComponents/ProfileDropDown";
 
 function Header(props) {
   return (
@@ -22,7 +23,7 @@ function Header(props) {
         <img src="/logo2.png" alt="University logo" />
       </div>
       <div className="h-full w-auto items-center flex justify-center p-4">
-        <IoIosSettings size={30} />
+        <ProfileDropdown />
       </div>
     </header>
   );
